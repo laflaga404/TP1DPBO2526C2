@@ -81,7 +81,7 @@ Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Py
   - Mencari
 - C++
   - Tambah
-  ![C++ Tambah Data](dokumentasi/cpp/CPP-tambah)
+  ![C++ Tambah Data](dokumentasi/cpp/CPP-tambah.png)
   - Tampilkan
   - Update
   - Hapus
