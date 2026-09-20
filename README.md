@@ -75,21 +75,31 @@ Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Py
 # Dokumentasi
 - Python
   - Tambah
+
+    ![Python Tambah Data](dokumentasi/python/python-tambah.png) 
   - Tampilkan
+
+    ![Python Tampilkan Data](dokumentasi/python/python-tampilkan.png) 
   - Update
+
+    ![Python Update Data](dokumentasi/python/python-update.png)
   - Hapus
+ 
+    ![Python Hapus Data](dokumentasi/python/python-hapus.png) 
   - Mencari
+    
+    ![Python Mencari Data](dokumentasi/python/python-cari.png) 
     
 - C++
   - Tambah
 
-     ![C++ Tambah Data](dokumentasi/cpp/CPP-tambah.png)
+    ![C++ Tambah Data](dokumentasi/cpp/CPP-tambah.png)
   - Tampilkan
 
     ![C++ tampilkan Data](dokumentasi/cpp/CPP-tampilkan.png)
   - Update
 
-     ![C++ update Data](dokumentasi/cpp/CPP-update.png)
+    ![C++ update Data](dokumentasi/cpp/CPP-update.png)
   - Hapus
 
     ![C++ hapus Data](dokumentasi/cpp/CPP-hapus.png)
@@ -106,17 +116,30 @@ Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Py
     ![java tampilkan Data](dokumentasi/java/java-tampilkan.png)
   - Update
 
-     ![java update Data](dokumentasi/java/java-update.png)
+    ![java update Data](dokumentasi/java/java-update.png)
   - Hapus
 
     ![java hapus Data](dokumentasi/java/java-hapus.png)
   - Mencari
 
-  ![java cari Data](dokumentasi/java/java-cari.png)
+    ![java cari Data](dokumentasi/java/java-cari.png)
   
 - PHP
   - Tambah
-  - Tampilkan
+
+    ![php tambah Data](dokumentasi/php/php-tambah.png)
+
   - Update
+
+    ![php update Data](dokumentasi/php/php-update.png)
+    
+    ![php update Data2](dokumentasi/php/php-update1.png)
+    
   - Hapus
+
+    ![php hapus Data](dokumentasi/php/php-hapus1.png)
+
+    ![php hapus Data2](dokumentasi/php/php-hapus2.png)
   - Mencari
+
+    ![php cari Data](dokumentasi/php/php-cari.png)
