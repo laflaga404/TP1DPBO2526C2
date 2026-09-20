@@ -68,6 +68,9 @@ Class juga menyediakan **getter dan setter** untuk mengakses serta mengubah atri
 
 Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Python. 
 
+## Error Handling
+- ID, harga, dan durasi tidak bisa alphabet dan kurang dari 0
+
 # Dokumentasi
 - Python
   - Tambah
