@@ -72,7 +72,7 @@ void tampilkanData() {
     }
 
     for (auto &film : daftarFilm) {
-        cout << "*************************************************************************" << endl;
+        cout << "**************************************" << endl;
         cout << "ID         : " << film.getId() << endl;
         cout << "Poster     : " << film.getPoster() << endl;
         cout << "Judul      : " << film.getJudul() << endl;
