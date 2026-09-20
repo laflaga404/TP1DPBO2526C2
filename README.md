@@ -70,6 +70,7 @@ Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Py
 
 ## Error Handling
 - ID, harga, dan durasi tidak bisa alphabet dan kurang dari 0
+- Tidak bisa memilih diluar pilihan angka
 
 # Dokumentasi
 - Python
