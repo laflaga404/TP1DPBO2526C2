@@ -83,19 +83,24 @@ Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Py
   - Tambah
   ![C++ Tambah Data](dokumentasi/cpp/CPP-tambah.png)
   - Tampilkan
-  ![C++ Tambah Data](dokumentasi/cpp/CPP-tampilkan.png)
+  ![C++ tampilkan Data](dokumentasi/cpp/CPP-tampilkan.png)
   - Update
-  ![C++ Tambah Data](dokumentasi/cpp/CPP-update.png)
+  ![C++ update Data](dokumentasi/cpp/CPP-update.png)
   - Hapus
-  ![C++ Tambah Data](dokumentasi/cpp/CPP-hapus.png)
+  ![C++ hapus Data](dokumentasi/cpp/CPP-hapus.png)
   - Mencari
-  ![C++ Tambah Data](dokumentasi/cpp/CPP-cari.png)
+  ![C++ cari Data](dokumentasi/cpp/CPP-cari.png)
 - Java
   - Tambah
+  ![java tambah Data](dokumentasi/java/java-tambah.png)
   - Tampilkan
+  ![java tampilkan Data](dokumentasi/java/java-tampilkan.png)
   - Update
+  ![java update Data](dokumentasi/java/java-update.png)
   - Hapus
+  ![java hapus Data](dokumentasi/java/java-hapus.png)
   - Mencari
+  ![java cari Data](dokumentasi/java/java-cari.png)
 - PHP
   - Tambah
   - Tampilkan
