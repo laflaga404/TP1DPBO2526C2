@@ -79,6 +79,7 @@ Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Py
   - Update
   - Hapus
   - Mencari
+    
 - C++
   - Tambah
 
@@ -95,17 +96,24 @@ Implementasi atribut tersebut terdapat pada class Film di C++, Java, PHP, dan Py
   - Mencari
 
     ![C++ cari Data](dokumentasi/cpp/CPP-cari.png)
+    
 - Java
   - Tambah
+
     ![java tambah Data](dokumentasi/java/java-tambah.png)
   - Tampilkan
+
     ![java tampilkan Data](dokumentasi/java/java-tampilkan.png)
   - Update
-    ![java update Data](dokumentasi/java/java-update.png)
+
+     ![java update Data](dokumentasi/java/java-update.png)
   - Hapus
+
     ![java hapus Data](dokumentasi/java/java-hapus.png)
   - Mencari
+
   ![java cari Data](dokumentasi/java/java-cari.png)
+  
 - PHP
   - Tambah
   - Tampilkan
