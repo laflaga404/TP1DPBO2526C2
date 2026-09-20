@@ -10,14 +10,20 @@ daftar_film = []
 def input_integer(pesan):
     while True:
         try:
-            return int(input(pesan))
+            nilai = int(input(pesan))
+
+            if nilai < 0:
+                print("Input harus berupa angka 0 atau lebih!")
+            else:
+                return nilai
+
         except ValueError:
-            print("Input harus berupa angka!")
+            print("Input harus berupa angka hey!")
 
 # TAMBAH DATA
 
 def tambah_data():
-    print("\n☆☆☆☆ TAMBAH DATA FILM ☆☆☆☆")
+    print("\n******** TAMBAH DATA FILM ********")
 
     id = input_integer("ID Film       : ")
 
@@ -52,14 +58,14 @@ def tambah_data():
 # TAMPILKAN DATA
 
 def tampilkan_data():
-    print("\n☆☆☆☆ DAFTAR FILM ☆☆☆☆")
+    print("\n******** DAFTAR FILM ********")
 
     if len(daftar_film) == 0:
         print("Belum ada data film.")
         return
 
     for film in daftar_film:
-        print("☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆")
+        print("**************************************")
         print("ID         :", film.get_id())
         print("Poster     :", film.get_poster())
         print("Judul      :", film.get_judul())
@@ -72,7 +78,7 @@ def tampilkan_data():
 # CARI DATA
 
 def cari_data():
-    print("\n☆☆☆☆ CARI DATA FILM ☆☆☆☆")
+    print("\n******** CARI DATA FILM ********")
 
     id = int(input("Masukkan ID film: "))
 
@@ -94,7 +100,7 @@ def cari_data():
 # UPDATE DATA
 
 def update_data():
-    print("\n☆☆☆☆ UPDATE DATA FILM ☆☆☆☆")
+    print("\n******** UPDATE DATA FILM ********")
 
     id = int(input("Masukkan ID film yang ingin diupdate: "))
 
@@ -134,7 +140,7 @@ def update_data():
 # HAPUS DATA
 
 def hapus_data():
-    print("\n☆☆☆☆HAPUS DATA FILM ☆☆☆☆")
+    print("\n******** HAPUS DATA FILM ********")
 
     id = int(input("Masukkan ID film yang ingin dihapus: "))
 
@@ -155,17 +161,17 @@ def hapus_data():
 
 def menu():
     while True:
-        print("\n☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆")
+        print("\n**************************************")
         print("             Tel Aviv XXI")
         print("    Silakan PIlih Fitur Wahai Goy:")
-        print("☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆")
+        print("**************************************")
         print("1. Tambah Data")
         print("2. Tampilkan Data")
         print("3. Update Data")
         print("4. Hapus Data")
         print("5. Cari Data")
         print("6. Keluar")
-        print("☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆")
+        print("**************************************")
 
         pilihan = input("Pilih menu: ")
 

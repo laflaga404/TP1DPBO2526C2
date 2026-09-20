@@ -11,17 +11,23 @@ vector<Film> daftarFilm;
 
 // ERROR handling biar ID, menit sama harga itu integer
 int inputInteger(string pesan) {
-    int value;
+    int nilai;
+
     while (true) {
         cout << pesan;
-        cin >> value;
-        if (cin.fail()) {
+
+        if (cin >> nilai) {
+            if (nilai < 0) {
+                cout << "Input harus berupa angka 0 atau lebih!" << endl;
+            } else {
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                return nilai;
+            }
+        } else {
+            cout << "Input harus berupa angka hey!" << endl;
+
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "Input harus berupa angka!" << endl;
-        } else {
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            return value;
         }
     }
 }
@@ -29,7 +35,7 @@ int inputInteger(string pesan) {
 // TAMBAH DATA
 
 void tambahData() {
-    cout << "\n☆☆☆☆ TAMBAH DATA FILM ☆☆☆☆" << endl;
+    cout << "\n******** TAMBAH DATA FILM ********" << endl;
 
     int id = inputInteger("ID Film       : ");
 
@@ -58,7 +64,7 @@ void tambahData() {
 // TAMPILKAN DATA
 
 void tampilkanData() {
-    cout << "\n☆☆☆☆ DAFTAR FILM ☆☆☆☆" << endl;
+    cout << "\n******** DAFTAR FILM ********" << endl;
 
     if (daftarFilm.empty()) {
         cout << "Belum ada data film." << endl;
@@ -66,7 +72,7 @@ void tampilkanData() {
     }
 
     for (auto &film : daftarFilm) {
-        cout << "☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆" << endl;
+        cout << "*************************************************************************" << endl;
         cout << "ID         : " << film.getId() << endl;
         cout << "Poster     : " << film.getPoster() << endl;
         cout << "Judul      : " << film.getJudul() << endl;
@@ -80,7 +86,7 @@ void tampilkanData() {
 // CARI DATA
 
 void cariData() {
-    cout << "\n☆☆☆☆ CARI DATA FILM ☆☆☆☆" << endl;
+    cout << "\n******** CARI DATA FILM ********" << endl;
 
     int id = inputInteger("Masukkan ID film: ");
 
@@ -104,7 +110,7 @@ void cariData() {
 // UPDATE DATA
 
 void updateData() {
-    cout << "\n☆☆☆☆ UPDATE DATA FILM ☆☆☆☆" << endl;
+    cout << "\n******** UPDATE DATA FILM ********" << endl;
 
     int id = inputInteger("Masukkan ID film yang ingin diupdate: ");
 
@@ -147,7 +153,7 @@ void updateData() {
 // HAPUS DATA
 
 void hapusData() {
-    cout << "\n☆☆☆\u2606HAPUS DATA FILM ☆☆☆☆" << endl;
+    cout << "\n******** HAPUS DATA FILM ********" << endl;
 
     int id = inputInteger("Masukkan ID film yang ingin dihapus: ");
 
@@ -166,17 +172,17 @@ void hapusData() {
 
 void menu() {
     while (true) {
-        cout << "\n☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆" << endl;
+        cout << "\n**************************************" << endl;
         cout << "             Tel Aviv XXI" << endl;
         cout << "    Silakan Pilih Fitur Wahai Goy:" << endl;
-        cout << "☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆" << endl;
+        cout << "**************************************" << endl;
         cout << "1. Tambah Data" << endl;
         cout << "2. Tampilkan Data" << endl;
         cout << "3. Update Data" << endl;
         cout << "4. Hapus Data" << endl;
         cout << "5. Cari Data" << endl;
         cout << "6. Keluar" << endl;
-        cout << "☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆" << endl;
+        cout << "**************************************" << endl;
 
         cout << "Pilih menu: ";
         string pilihan;

@@ -9,22 +9,30 @@ public class main {
     static Scanner scanner = new Scanner(System.in);
 
     // ERROR handling biar ID, menit sama harga itu integer
-    static int inputInteger(String pesan) {
-        while (true) {
-            System.out.print(pesan);
-            String input = scanner.nextLine();
-            try {
-                return Integer.parseInt(input.trim());
-            } catch (NumberFormatException e) {
-                System.out.println("Input harus berupa angka!");
+   static int inputInteger(String pesan) {
+    while (true) {
+        System.out.print(pesan);
+
+        if (scanner.hasNextInt()) {
+            int nilai = scanner.nextInt();
+            scanner.nextLine();
+
+            if (nilai < 0) {
+                System.out.println("Input harus berupa angka 0 atau lebih!");
+            } else {
+                return nilai;
             }
+        } else {
+            System.out.println("Input harus berupa angka hey!");
+            scanner.nextLine();
         }
     }
+}
 
     // TAMBAH DATA
 
     static void tambahData() {
-        System.out.println("\n☆☆☆☆ TAMBAH DATA FILM ☆☆☆☆");
+        System.out.println("\n******** TAMBAH DATA FILM ********");
 
         int id = inputInteger("ID Film       : ");
 
@@ -56,7 +64,7 @@ public class main {
     // TAMPILKAN DATA
 
     static void tampilkanData() {
-        System.out.println("\n☆☆☆☆ DAFTAR FILM ☆☆☆☆");
+        System.out.println("\n******** DAFTAR FILM ********");
 
         if (daftarFilm.isEmpty()) {
             System.out.println("Belum ada data film.");
@@ -64,7 +72,7 @@ public class main {
         }
 
         for (Film film : daftarFilm) {
-            System.out.println("☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆");
+            System.out.println("**************************************");
             System.out.println("ID         : " + film.getId());
             System.out.println("Poster     : " + film.getPoster());
             System.out.println("Judul      : " + film.getJudul());
@@ -78,7 +86,7 @@ public class main {
     // CARI DATA
 
     static void cariData() {
-        System.out.println("\n☆☆☆☆ CARI DATA FILM ☆☆☆☆");
+        System.out.println("\n******** CARI DATA FILM ********");
 
         int id = inputInteger("Masukkan ID film: ");
 
@@ -102,7 +110,7 @@ public class main {
     // UPDATE DATA
 
     static void updateData() {
-        System.out.println("\n☆☆☆☆ UPDATE DATA FILM ☆☆☆☆");
+        System.out.println("\n******** UPDATE DATA FILM ********");
 
         int id = inputInteger("Masukkan ID film yang ingin diupdate: ");
 
@@ -148,7 +156,7 @@ public class main {
     // HAPUS DATA
 
     static void hapusData() {
-        System.out.println("\n☆☆☆\u2606HAPUS DATA FILM ☆☆☆☆");
+        System.out.println("\n******** HAPUS DATA FILM ********");
 
         int id = inputInteger("Masukkan ID film yang ingin dihapus: ");
 
@@ -167,17 +175,17 @@ public class main {
 
     static void menu() {
         while (true) {
-            System.out.println("\n☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆");
+            System.out.println("\n**************************************");
             System.out.println("             Tel Aviv XXI");
             System.out.println("    Silakan Pilih Fitur Wahai Goy:");
-            System.out.println("☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆");
+            System.out.println("**************************************");
             System.out.println("1. Tambah Data");
             System.out.println("2. Tampilkan Data");
             System.out.println("3. Update Data");
             System.out.println("4. Hapus Data");
             System.out.println("5. Cari Data");
             System.out.println("6. Keluar");
-            System.out.println("☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆");
+            System.out.println("**************************************");
 
             System.out.print("Pilih menu: ");
             String pilihan = scanner.nextLine();
