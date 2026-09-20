@@ -24,7 +24,7 @@ class Film:
     def get_sutradara(self) -> str:
         return self._sutradara
 
-    # ---- Setter ----
+    # ---- Setter ----aa
     def set_id(self, id: int) -> None:
         self._id = int(id)
     def set_poster(self, poster: str) -> None:
