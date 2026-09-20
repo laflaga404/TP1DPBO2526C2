@@ -4,4 +4,26 @@ Saya Nabil Azka Saputra dengan NIM 2507096 mengerjakan Tugas Praktikum 1 pada Ma
 
 # Dokumentasi
 - Python
-  - Tambah 
+  - Tambah
+  - Tampilkan
+  - Update
+  - Hapus
+  - Mencari
+- C++
+  - Tambah
+  - Tampilkan
+  - Update
+  - Hapus
+  - Mencari
+- Java
+  - Tambah
+  - Tampilkan
+  - Update
+  - Hapus
+  - Mencari
+- PHP
+  - Tambah
+  - Tampilkan
+  - Update
+  - Hapus
+  - Mencari
